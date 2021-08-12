@@ -19,15 +19,6 @@ export const Intro = () => {
                     </div>
                 </div>
                 <div className="img-content">
-                    <svg version="1.1" width="0" height="0">
-                        <filter id="gaussian-blur">
-                            <feComposite
-                                operator='over'
-                                in='shadow'
-                                in2='SourceGraphic'
-                            />
-                        </filter>
-                    </svg>
                 </div>
             </div>
         </div>
