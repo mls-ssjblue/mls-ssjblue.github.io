@@ -19,11 +19,42 @@
     flex-direction: column;
     /*transition: opacity 2s;*/
     /*-webkit-transition: opacity 2s; !* Safari *!*/
-    /* The default, as in, you get this without defining anything */
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     /*animation-timing-function: cubic-bezier(1,2,3,4);*/
+}
+img {
+    image-rendering: pixelated;
+}
+.img-content{
+    width: 500px;
+    height: 500px;
+    transform: scale(0.5);
+    background-image: url('/src/assets/mls-pixelated.png');
+    align-self:center;
+    /*background-color: #01083b;*/
+    /*background-blend-mode: overlay;*/
+    /*background-repeat: no-repeat;*/
+    filter: grayscale();
+    /*filter: sepia() url(#gaussian-blur)*/
+}
+
+    .img-content1{
+    perspective: 3000px;
+    width: 500px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+}
+img{
+    /*width: 500px;*/
+}
+.image img {
+    transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+    box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
+    transition: all .4s;
+    transform-style: preserve-3d;
 }
 @keyframes fadeInAnimation {
     0% {
