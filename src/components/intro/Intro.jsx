@@ -8,9 +8,9 @@ export const Intro = () => {
                     <div>
                         <h4>Hi, I am</h4>
                     </div>
-                    <div>
-                        <h1>Susheel</h1>
-                    </div>
+
+                        <h1 className="name">Susheel</h1>
+
                     <div>
                         <h2>I'm a software engineer</h2>
                     </div>

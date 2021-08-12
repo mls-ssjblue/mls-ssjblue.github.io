@@ -1,7 +1,8 @@
 .intro {
     /*margin-left: 20px;*/
     min-height: 100vh;
-    background: linear-gradient(to left top, #000b51, #181717);
+    background: linear-gradient(180deg ,#181717,#0d4058);
+
     color: rgba(255, 255, 255, 1);
     justify-content: center;
     display: flex;
@@ -68,6 +69,11 @@ h1 {
     line-height: 1;
     font-size: 80px;
     margin: 0;
+    text-align: left;
+    width: 290px;
+}
+h1.name{
+    font-family: 'Yellowtail', cursive;
 }
 
 h2 {
