@@ -1,7 +1,7 @@
 .intro {
     /*margin-left: 20px;*/
     min-height: 100vh;
-    background: linear-gradient(180deg ,#181717,#0d4058);
+    /*background: linear-gradient(180deg ,#181717,#0d4058);*/
 
     color: rgba(255, 255, 255, 1);
     justify-content: center;
@@ -60,7 +60,7 @@ img {
         /*transform: translate(0, 0);*/
     }
 }
-h1 {
+.intro h1 {
     background-image: url(https://cdn.dribbble.com/users/707385/screenshots/5472252/19_3_1.gif);
     background-size: cover;
     color: transparent;

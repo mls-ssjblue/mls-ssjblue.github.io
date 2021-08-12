@@ -1,12 +1,38 @@
 .about{
     min-height: 100vh;
-    background: linear-gradient(180deg, #0d4058, #181717);
-    clip-path: polygon(100% 0, 0 0, 100% 20%);
+    background: #cacbcb;
+    clip-path: polygon(0 19%, 100% 0, 100% 100%, 0% 100%);
     color: rgba(255, 255, 255, 1);
     justify-content: center;
     display: flex;
 }
-
+h1{
+    font-size: 60px;
+}
 .about-content{
+    display: flex;
+    padding: 180px 60px;
+    color:black;
+}
+.rick-pic{
+    align-self: start;
+    /*background-image: url('/src/assets/mls-rick1.png');*/
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    margin-right:100px;
+    transform: scale(0.5);
+    /*max-width: 500px;*/
+    /*margin:auto;*/
+}
+.about-text{
+    /*align-self: end;*/
+    text-align: start;
+   align-self: start;
+    font-size: 27px;
+}
 
+p.quote{
+    font-family: 'Yellowtail', cursive;
+    margin-right: 20px;
 }

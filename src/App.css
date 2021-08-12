@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background: #01131d;
+  background: linear-gradient(135deg ,#181717,#0d4058);
+
   font-family: 'Oxygen', sans-serif;
 }
 
