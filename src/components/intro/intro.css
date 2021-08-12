@@ -1,0 +1,59 @@
+.intro {
+    /*margin-left: 20px;*/
+    min-height: 100vh;
+    background: linear-gradient(to left top, #000b51, #181717);
+    color: rgba(255, 255, 255, 1);
+    justify-content: center;
+    display: flex;
+}
+
+.intro-content {
+    margin: 50px;
+    display: flex;
+}
+
+.text-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /*transition: opacity 2s;*/
+    /*-webkit-transition: opacity 2s; !* Safari *!*/
+    /* The default, as in, you get this without defining anything */
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    /*animation-timing-function: cubic-bezier(1,2,3,4);*/
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(0, -150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+h1 {
+    background-image: url(https://cdn.dribbble.com/users/707385/screenshots/5472252/19_3_1.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    line-height: 1;
+    font-size: 80px;
+    margin: 0;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
