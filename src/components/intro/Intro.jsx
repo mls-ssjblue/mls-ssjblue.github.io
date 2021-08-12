@@ -6,7 +6,7 @@ export const Intro = () => {
             <div className="intro-content">
                 <div className="text-content">
                     <div>
-                        <h4>Hi, my name is</h4>
+                        <h4>Hi, I am</h4>
                     </div>
                     <div>
                         <h1>Susheel</h1>
