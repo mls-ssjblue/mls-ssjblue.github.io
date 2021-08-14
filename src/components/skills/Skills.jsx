@@ -12,6 +12,9 @@ import { ReactComponent as Mongo } from "../../assets/skills/icons8-mongodb.svg"
 import { ReactComponent as Aws } from "../../assets/skills/icons8-amazon-web-services.svg";
 
 export const Skills = () => {
+  const handleMouseMove = (e) => {
+
+  }
   return (
     <div className="skills">
       <div>
@@ -19,19 +22,19 @@ export const Skills = () => {
       </div>
       <div className="skills-content">
         <div className="skill-icons">
-          <JS />
-          <TS />
-          <Html />
-          <Css />
-          <React />
+          <JS   className="skill-icon" onMouseMove={(ev)=> handleMouseMove(ev)}/>
+          <TS  className="skill-icon"/>
+          <Html  className="skill-icon"/>
+          <Css  className="skill-icon"/>
+          <React  className="skill-icon"/>
         </div>
         <div className="skill-icons">
-          <Java />
-          <Kotlin />
-          <Spring />
-          <Oracle />
-          <Mongo />
-          <Aws />
+          <Java  className="skill-icon"/>
+          <Kotlin  className="skill-icon"/>
+          <Spring  className="skill-icon"/>
+          <Oracle  className="skill-icon"/>
+          <Mongo  className="skill-icon"/>
+          <Aws  className="skill-icon"/>
         </div>
       </div>
     </div>
