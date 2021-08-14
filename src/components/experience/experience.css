@@ -1,0 +1,57 @@
+.experience {
+    color: #cacbcb;
+    padding:20px;
+}
+
+.experience h1{
+    color: #cacbcb;
+}
+
+.cs-logo{
+    /*width: 200px;*/
+    height: 40px;
+    color:white;
+    background: linear-gradient(white, gray);
+    /*background-color: transparent;*/
+
+    padding: 5px 5px 20px 20px;
+    border-radius: 10px;
+}
+.singlife-logo{
+    /*width: 200px;*/
+    height: 70px;
+    /*color:white;*/
+    /*background: linear-gradient(white, gray);*/
+    /*padding: 5px 5px 20px 20px;*/
+    /*border-radius: 10px;*/
+}
+.aviva-logo{
+    /*width: 200px;*/
+    height: 150px;
+    color:white;
+    margin-bottom:-40px;
+    /*background: linear-gradient(white, gray);*/
+    /*padding: 5px 5px 20px 20px;*/
+    /*border-radius: 10px;*/
+}
+.autodesk-logo{
+    width: 200px;
+    align-self: center;
+    /*color:white;*/
+    /*background: linear-gradient(white, gray);*/
+    /*padding: 5px 5px 20px 20px;*/
+    /*border-radius: 10px;*/
+}
+.jfdi-logo{
+    width: 50px;
+    color:white;
+    /*background: linear-gradient(white, gray);*/
+    padding: 5px 5px 20px 20px;
+    margin-bottom:-40px;
+
+    /*border-radius: 10px;*/
+}
+
+.second{
+    margin-top: 40px
+}
