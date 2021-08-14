@@ -154,3 +154,13 @@ h4 {
         margin-top: 20px;
     }
 }
+
+
+@media (min-width:768px) and (max-width: 1300px) {
+
+    .left-column-intro {
+        display: flex;
+        flex: 0 0 10em;
+    }
+
+}
