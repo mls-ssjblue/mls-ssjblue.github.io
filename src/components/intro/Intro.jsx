@@ -15,7 +15,7 @@ export const Intro = () => {
                         <h2>I'm a software engineer</h2>
                     </div>
                     <div>
-                        <h3>I build things and tackle complex problems</h3>
+                        <h3>I design solutions to tackle the industry's problems.</h3>
                     </div>
                 </div>
                 <div className="img-content">

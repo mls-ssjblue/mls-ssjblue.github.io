@@ -1,0 +1,17 @@
+.skills {
+    min-height: 100vh;
+    background: #cacbcb;
+    /*clip-path: ellipse(100% 55% at 48% 44%);
+      !*clip-path: polygon(13% 0, 26% 0, 82% 0, 100% 9%, 100% 100%, 0 100%, 0 12%);*!*/
+    padding-top:50px;
+    color: rgb(12, 0, 0);
+    justify-content: center;
+    /*display: flex;*/
+    clip-path: polygon(0 16%, 100% 1%, 100% 100%, 0% 100%);
+
+}
+
+.skill-icons{
+    margin-top:20px;
+    padding:10px;
+}

@@ -18,6 +18,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    text-align: left;
     /*transition: opacity 2s;*/
     /*-webkit-transition: opacity 2s; !* Safari *!*/
     animation: fadeInAnimation ease 3s;
