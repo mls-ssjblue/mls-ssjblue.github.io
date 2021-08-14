@@ -3,20 +3,31 @@
     background: #cacbcb;
     /*clip-path: ellipse(100% 55% at 48% 44%);
       !*clip-path: polygon(13% 0, 26% 0, 82% 0, 100% 9%, 100% 100%, 0 100%, 0 12%);*!*/
-    padding-top:50px;
+    padding-top:150px;
+    display: flex;
     color: rgb(12, 0, 0);
     justify-content: center;
-    /*display: flex;*/
     clip-path: polygon(0 16%, 100% 1%, 100% 100%, 0% 100%);
 }
+.skills-container{
+    /*display: flex;*/
+    padding: 60px 60px;
+    color:black;
+    flex-direction: column;
+    z-index: 1;
+}
+
 .skills-content{
-    margin-top:100px;
+    /*margin-top:30px;*/
 }
 .skill-icons{
     margin-top:20px;
     padding:10px;
 }
 
+.skill-icon{
+    margin:10px;
+}
 .skill-icon:hover {
     animation: shake 1s;
     /*box-shadow: inset 0 50px 0 0 blue;*/
@@ -34,4 +45,38 @@
     80% { -webkit-transform: translate(-1px, -1px) rotate(5deg); }
     90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
     100% { -webkit-transform: translate(1px, -2px) rotate(-5deg); }
+}
+
+.skills-background{
+    width: 500px;
+    /*background: red;*/
+    /*overflow-x:auto;*/
+    /*align-self: end;*/
+    /*transform: translate(0px,0px);*/
+    margin-right: 200px;
+    justify-content: center;
+    position:absolute;
+    left:-400px;
+    flex: 0 0 10em;
+}
+
+.svg-2{
+    /*background: red;*/
+    animation: spin 8s linear infinite;
+    -webkit-animation: spin 8s linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes spin {
+    0%   {-webkit-transform: rotate(0deg);}
+
+    100% {-webkit-transform: rotate(360deg);}
+}
+@keyframes spin {
+    0%   {transform: rotate(0deg);}
+
+    100% {transform: rotate(360deg);}
 }

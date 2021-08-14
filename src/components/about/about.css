@@ -1,54 +1,57 @@
-.about{
+.about {
     min-height: 100vh;
     background: #cacbcb;
     clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
     color: rgba(255, 255, 255, 1);
-    justify-content: center;
+    justify-content: start;
     display: flex;
 }
-h1{
+
+.about-text h1 {
     font-size: 60px;
+    text-align: center;
 }
-.about-content{
+
+.about-content {
     display: flex;
-    padding: 180px 60px;
-    color:black;
+    padding-top: 180px;
+    padding-left: 50px;
+    color: black;
 }
-.rick-pic{
+
+.rick-pic {
     align-self: start;
     /*background-image: url('/src/assets/mls-rick1.png');*/
     background-repeat: no-repeat;
-    width: 500px;
-    height: 500px;
-    margin-right:100px;
+    /*width: 500px;*/
+    /*height: 500px;*/
+    margin-right: 100px;
     transform: scale(0.5);
     /*max-width: 500px;*/
     /*margin:auto;*/
 }
-.about-text{
+
+.about-text {
     /*align-self: end;*/
     text-align: start;
-   align-self: start;
+    align-self: start;
     font-size: 27px;
 }
 
-p.quote{
+p.quote {
     font-family: 'Yellowtail', cursive;
     margin-right: 20px;
 }
 
-.about-background{
-    /*width: 500px;*/
-    /*background: red;*/
-    overflow-x:hidden;
-    /*align-self: end;*/
-    /*transform: translate(0px,0px);*/
+.about-background {
+    overflow: hidden;
     margin-left: 80px;
-    justify-content: center;
 }
 
-.svg-1{
+.svg-1 {
     /*background: red;*/
+    /*position: absolute;*/
+
     animation: spin 8s linear infinite;
     -webkit-animation: spin 8s linear infinite;
     /*-webkit-transform-origin: 50% 50%;*/
@@ -56,15 +59,50 @@ p.quote{
     /*-o-transform-origin: 50% 50%;*/
     /*-webkit-transform: translate(-100px,0px);*/
     /*transform: translate(-100px,0px);*/
-    transform-origin: 50% 50%;}
+    transform-origin: 50% 50%;
+}
 
 @-webkit-keyframes spin {
-    0%   {-webkit-transform: rotate(0deg);}
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
 
-    100% {-webkit-transform: rotate(360deg);}
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
-@keyframes spin {
-    0%   {transform: rotate(0deg);}
 
-    100% {transform: rotate(360deg);}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.left-column-about {
+    display: flex;
+    flex: 0 0 20em;
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+    .left-column-about {
+        display: flex;
+        flex: 0 0 0;
+    }
+    .about-background {
+        overflow: hidden;
+        margin-left: 10px;
+    }
+    .rick-pic {
+        align-self: start;
+        background-repeat: no-repeat;
+        margin-right: 0px;
+        transform: scale(0.5);
+    }
+    .about-text{
+        font-size: 18px;
+    }
 }

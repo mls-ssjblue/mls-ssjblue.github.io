@@ -1,13 +1,12 @@
 import "./about.css";
-import {ReactComponent as Svg} from "../../assets/circle-spin.svg";
+import {ReactComponent as Svg} from "../../assets/circle-spin-3.svg";
 
-// Svg from '../../assets/ellipse.svg'
 export const About = () => {
     return (
+
         <div className="about">
+            <div className="left-column-about" />
             <div className="about-content">
-                <div className="rick-pic">
-                </div>
                 <div className="about-text">
                     <h1>About me</h1>
                     I am a full stack engineer with experience working in different industries ranging from banking to
@@ -18,7 +17,8 @@ export const About = () => {
                         foolish"</p> - Steve Jobs</div>
 
                 </div>
-
+                <div className="rick-pic">
+                </div>
             </div>
             <div className="about-background">
                 <Svg className="svg-1"/>

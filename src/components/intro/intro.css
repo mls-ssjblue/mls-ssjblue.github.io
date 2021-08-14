@@ -4,13 +4,14 @@
     /*background: linear-gradient(180deg ,#181717,#0d4058);*/
 
     color: rgba(255, 255, 255, 1);
-    justify-content: center;
+    justify-content: start;
     display: flex;
 }
 
 .intro-content {
     margin: 50px;
     display: flex;
+    overflow: hidden;
 }
 
 .text-content {
@@ -18,7 +19,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    text-align: left;
+    text-align: start;
     /*transition: opacity 2s;*/
     /*-webkit-transition: opacity 2s; !* Safari *!*/
     animation: fadeInAnimation ease 3s;
@@ -32,6 +33,7 @@ img {
 .img-content {
     width: 500px;
     height: 500px;
+    /*margin-left:10%;*/
     transform: scale(0.5);
     background-image: url('/src/assets/mls-removebg-preview.png');
     align-self: center;
@@ -39,6 +41,7 @@ img {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     filter: grayscale(50);
+    /*flex:1 0 0;*/
     /*filter: sepia() url(#gaussian-blur)*/
 }
 @keyframes fadeInAnimation {
@@ -87,4 +90,67 @@ h3 {
 
 h4 {
     margin-bottom: 10px;
+}
+
+.left-column-intro{
+    display: flex;
+    flex: 0 0 20em;
+}
+
+.svg-binary{
+    /*background: red;*/
+    /*position: absolute;*/
+
+    animation: spin 8s linear infinite;
+    -webkit-animation: spin 8s linear infinite;
+    /*-webkit-transform-origin: 50% 50%;*/
+    /*-moz-transform-origin: 50% 50%;*/
+    /*-o-transform-origin: 50% 50%;*/
+    /*-webkit-transform: translate(-100px,0px);*/
+    /*transform: translate(-100px,0px);*/
+    transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes spin {
+    0%   {-webkit-transform: translate(0);}
+
+    100% {-webkit-transform: translate(100);}
+}
+@keyframes spin {
+    0%   {transform: translate(0);}
+
+    100% {transform: translate(100);}
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+    .left-column-intro {
+        display: flex;
+        flex: 0 0 0;
+    }
+    .about-background {
+        overflow: hidden;
+        margin-left: 10px;
+    }
+    .img-content {
+        width: 500px;
+        height: 500px;
+        /*margin-left:10%;*/
+        transform: scale(0.4);
+        background-image: url('/src/assets/mls-removebg-preview.png');
+        align-self: center;
+        animation: appear ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        filter: grayscale(50);
+        /*filter: sepia() url(#gaussian-blur)*/
+    }
+    .intro-content {
+         margin: 50px;
+         display: flex;
+         overflow: hidden;
+         flex-direction: column;
+     }
+    .text-content{
+        margin-top: 20px;
+    }
 }
