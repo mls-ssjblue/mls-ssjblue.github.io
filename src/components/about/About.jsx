@@ -12,7 +12,7 @@ export const About = () => {
                     I am a full stack engineer and lead with experience working in different industries ranging from banking to
                     startups.
                     I have worked on building web applications across both the front end and back end. I am constantly
-                    looking to challenge myself with a growth mindset and build some cool stuff!
+                    looking to challenge myself with a growth mindset and work on interesting tech.
                     <div style={{display: "flex", alignItems: "center"}}><p className="quote">"Stay hungry. Stay
                         foolish"</p> - Steve Jobs</div>
 
